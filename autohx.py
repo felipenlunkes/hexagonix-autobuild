@@ -34,52 +34,65 @@ class hxAutoBuild:
 
     def configure(self):
 
-        print("configure")
+        print("Ação: configure\n")
 
-        os.system("./configure.sh")
+        os.system("sudo ./configure.sh")
 
         self.terminar() 
 
     def construirHX(self):
 
-        print("construirHX")
+        print("Ação: construirHX\n")
 
-        os.system("hx -i hx")
+        os.system("sudo hx -i hx")
 
-        fim() 
+        self.terminar() 
 
     def construirAHX(self):
 
-        print("construirAHX")
+        print("Ação: construirAHX\n")
 
-        os.system("hx -i ahx")
+        os.system("sudo hx -i ahx")
+
+        self.terminar()
 
     def limpar(self):
 
-        print("limpar")
+        print("Ação: limpar\n")
 
         os.system("hx limpar")
 
+        self.terminar()
+
     def execHX(self):
 
-        print("execHX")
+        print("Ação: execHX\n")
 
         os.system("hx -v hx")
 
+        self.terminar()
+
     def execAHX(self):
 
-        print("execAHX")
+        print("Ação: execAHX\n")
 
         os.system("hx -v ahx")
 
+        self.terminar()
+
     def terminar(self):
 
-        print("Terminado!")
+        print("\nTerminado!\n")
 
 # 
 
 janela=Tk()
-imcalc=hxAutoBuild(janela)
-janela.title('hx autobuild para Hexagonix H1-R6+')
+autobuild=hxAutoBuild(janela)
+janela.title('hx autobuild para Hexagonix H1-R6+ (v0.1)')
 janela.geometry("500x400+10+10")
+print("\nhx autobuild para Hexagonix H1-R6+")
+print("Copyright (C) 2022-2022 Felipe Miguel Nery Lunkes")
+print("Todos os direitos reservados")
+print("\nAguardando interação com o usuário...")
 janela.mainloop()
+print("Finalizado pelo usuário.")
