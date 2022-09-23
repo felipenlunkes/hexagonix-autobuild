@@ -2,6 +2,8 @@
 
 # Automatizador de construção do Hexagonix, por Felipe Miguel Nery Lunkes
 # Licenciado sobre GPL-3.0 
+#
+# Front-end para a ferramenta hx
 
 from tkinter import *
 import os
