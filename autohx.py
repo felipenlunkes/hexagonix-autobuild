@@ -3,7 +3,7 @@
 # Automatizador de construção do Hexagonix, por Felipe Miguel Nery Lunkes
 # Licenciado sobre GPL-3.0 
 #
-# Front-end para a ferramenta hx
+# Frontend para a ferramenta hx
 
 from tkinter import *
 import os
@@ -38,7 +38,7 @@ class hxAutoBuild:
 
         print("Ação: configure\n")
 
-        os.system("sudo ./configure.sh")
+        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo ./configure.sh && echo Pressione ENTER para voltar ao hx autobuild... && echo && read pausa'")
 
         self.terminar() 
 
@@ -46,7 +46,7 @@ class hxAutoBuild:
 
         print("Ação: construirHX\n")
 
-        os.system("sudo hx -i hx")
+        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i hx && echo Pressione ENTER para voltar ao hx autobuild... && echo && read pausa'")
 
         self.terminar() 
 
@@ -54,7 +54,7 @@ class hxAutoBuild:
 
         print("Ação: construirAHX\n")
 
-        os.system("sudo hx -i ahx")
+        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i ahx && echo Pressione ENTER para voltar ao hx autobuild... && echo && read pausa'")
 
         self.terminar()
 
@@ -90,9 +90,9 @@ class hxAutoBuild:
 
 janela=Tk()
 autobuild=hxAutoBuild(janela)
-janela.title('hx autobuild para Hexagonix H1-R6+ (v0.1)')
+janela.title('hx autobuild para Hexagonix H1-R6+ (v0.5)')
 janela.geometry("500x400+10+10")
-print("\nhx autobuild para Hexagonix H1-R6+")
+print("\nhx autobuild (Hexagonix H1-R6+)")
 print("Copyright (C) 2022-2022 Felipe Miguel Nery Lunkes")
 print("Todos os direitos reservados")
 print("\nAguardando interação com o usuário...")
