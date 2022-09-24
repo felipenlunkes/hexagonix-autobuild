@@ -36,7 +36,7 @@ class hxAutoBuild:
 
     def configure(self):
 
-        print("Ação: configure\n")
+        print("Ação solicitada pelo usuário: configure\n")
 
         os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo ./configure.sh && echo &&echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
 
@@ -44,7 +44,7 @@ class hxAutoBuild:
 
     def construirHX(self):
 
-        print("Ação: construirHX\n")
+        print("Ação solicitada pelo usuário: construirHX\n")
 
         os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i hx && echo && echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
 
@@ -52,7 +52,7 @@ class hxAutoBuild:
 
     def construirAHX(self):
 
-        print("Ação: construirAHX\n")
+        print("Ação solicitada pelo usuário: construirAHX\n")
 
         os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i ahx && echo && echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
 
@@ -60,7 +60,7 @@ class hxAutoBuild:
 
     def limpar(self):
 
-        print("Ação: limpar\n")
+        print("AçAção solicitada pelo usuárioão: limpar\n")
 
         os.system("hx limpar")
 
@@ -68,7 +68,7 @@ class hxAutoBuild:
 
     def execHX(self):
 
-        print("Ação: execHX\n")
+        print("Ação solicitada pelo usuário: execHX\n")
 
         os.system("hx -v hx")
 
@@ -76,7 +76,7 @@ class hxAutoBuild:
 
     def execAHX(self):
 
-        print("Ação: execAHX\n")
+        print("Ação solicitada pelo usuário: execAHX\n")
 
         os.system("hx -v ahx")
 
@@ -84,13 +84,13 @@ class hxAutoBuild:
 
     def terminar(self):
 
-        print("\nTerminado!\n")
+        print("Solicitação finalizada.\n")
 
 # 
 
 janela=Tk()
 autobuild=hxAutoBuild(janela)
-janela.title('hx autobuild para Hexagonix H1-R6+ (v0.5)')
+janela.title('hx autobuild para Hexagonix H1-R6+ (v0.6)')
 janela.geometry("500x400+10+10")
 print("\nhx autobuild (Hexagonix H1-R6+)")
 print("Copyright (C) 2022-2022 Felipe Miguel Nery Lunkes")
