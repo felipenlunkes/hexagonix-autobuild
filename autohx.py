@@ -38,7 +38,7 @@ class hxAutoBuild:
 
         print("Ação: configure\n")
 
-        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo ./configure.sh && echo Pressione ENTER para voltar ao hx autobuild... && echo && read pausa'")
+        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo ./configure.sh && echo &&echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
 
         self.terminar() 
 
@@ -46,7 +46,7 @@ class hxAutoBuild:
 
         print("Ação: construirHX\n")
 
-        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i hx && echo Pressione ENTER para voltar ao hx autobuild... && echo && read pausa'")
+        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i hx && echo && echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
 
         self.terminar() 
 
@@ -54,7 +54,7 @@ class hxAutoBuild:
 
         print("Ação: construirAHX\n")
 
-        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i ahx && echo Pressione ENTER para voltar ao hx autobuild... && echo && read pausa'")
+        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i ahx && echo && echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
 
         self.terminar()
 
