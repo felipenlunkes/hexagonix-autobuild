@@ -91,7 +91,7 @@ class hxAutoBuild:
 janela=Tk()
 autobuild=hxAutoBuild(janela)
 janela.title('hx autobuild para Hexagonix H1-R6+ (v0.6)')
-janela.geometry("500x400+10+10")
+janela.geometry("500x250+10+10")
 print("\nhx autobuild (Hexagonix H1-R6+)")
 print("Copyright (C) 2022-2022 Felipe Miguel Nery Lunkes")
 print("Todos os direitos reservados")
