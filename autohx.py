@@ -13,12 +13,10 @@ class hxAutoBuild:
     def __init__(self, win):
 
         self.lbl1=Label(win, text='Ferramenta de automatização de construção para Hexagonix')
-        self.lbl2=Label(win, text='Copyright (C) 2022 Felipe Miguel Nery Lunkes')
-        self.lbl3=Label(win, text='Todos os direitos reservados.')
+        self.lbl2=Label(win, text='Selecione uma das opções abaixo para continuar')
 
-        self.lbl1.place(x=40, y=10)
-        self.lbl2.place(x=90, y=30)
-        self.lbl3.place(x=150, y=50)
+        self.lbl1.place(x=40, y=5)
+        self.lbl2.place(x=80, y=50)
 
         self.botao0=Button(win, text='Configurar ambiente (./configure.sh)', command=self.configure)
         self.botao1=Button(win, text='Construir Hexagonix', command=self.construirHX)
@@ -27,12 +25,12 @@ class hxAutoBuild:
         self.botao4=Button(win, text='Executar Hexagonix (vm)', command=self.execHX)
         self.botao5=Button(win, text='Executar Andromeda (vm)', command=self.execAHX)
        
-        self.botao0.place(x=120, y=80)
-        self.botao1.place(x=20, y=130)
-        self.botao2.place(x=190, y=130)
-        self.botao3.place(x=365, y=130)
-        self.botao4.place(x=40, y=180)
-        self.botao5.place(x=250, y=180)
+        self.botao0.place(x=120, y=100)
+        self.botao1.place(x=20, y=150)
+        self.botao2.place(x=190, y=150)
+        self.botao3.place(x=365, y=150)
+        self.botao4.place(x=40, y=200)
+        self.botao5.place(x=250, y=200)
 
     def configure(self):
 
@@ -90,7 +88,7 @@ class hxAutoBuild:
 
 janela=Tk()
 autobuild=hxAutoBuild(janela)
-janela.title('hx autobuild para Hexagonix H1-R6+ (v0.6)')
+janela.title('hx autobuild para Hexagonix H1-R6+ (v0.7)')
 janela.geometry("500x250+10+10")
 print("\nhx autobuild (Hexagonix H1-R6+)")
 print("Copyright (C) 2022-2022 Felipe Miguel Nery Lunkes")
