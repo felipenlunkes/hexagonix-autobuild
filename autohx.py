@@ -20,17 +20,13 @@ class hxAutoBuild:
 
         self.botao0=Button(win, text='Configurar ambiente (./configure.sh)', command=self.configure)
         self.botao1=Button(win, text='Construir Hexagonix', command=self.construirHX)
-        self.botao2=Button(win, text='Construir Andromeda', command=self.construirAHX)
-        self.botao3=Button(win, text='Limpar árvore', command=self.limpar)
-        self.botao4=Button(win, text='Executar Hexagonix (vm)', command=self.execHX)
-        self.botao5=Button(win, text='Executar Andromeda (vm)', command=self.execAHX)
-       
+        self.botao2=Button(win, text='Limpar árvore', command=self.limpar)
+        self.botao3=Button(win, text='Executar Hexagonix (vm)', command=self.execHX)
+
         self.botao0.place(x=120, y=100)
         self.botao1.place(x=20, y=150)
-        self.botao2.place(x=190, y=150)
-        self.botao3.place(x=365, y=150)
-        self.botao4.place(x=40, y=200)
-        self.botao5.place(x=250, y=200)
+        self.botao2.place(x=365, y=150)
+        self.botao3.place(x=40, y=200)
 
     def configure(self):
 
@@ -48,14 +44,6 @@ class hxAutoBuild:
 
         self.terminar() 
 
-    def construirAHX(self):
-
-        print("Ação solicitada pelo usuário: construirAHX\n")
-
-        os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo Você deve inserir sua senha para continuar... && echo && sudo hx -i ahx && echo && echo Pressione ENTER para voltar ao hx autobuild... && read pausa'")
-
-        self.terminar()
-
     def limpar(self):
 
         print("AçAção solicitada pelo usuárioão: limpar\n")
@@ -69,14 +57,6 @@ class hxAutoBuild:
         print("Ação solicitada pelo usuário: execHX\n")
 
         os.system("hx -v hx")
-
-        self.terminar()
-
-    def execAHX(self):
-
-        print("Ação solicitada pelo usuário: execAHX\n")
-
-        os.system("hx -v ahx")
 
         self.terminar()
 
