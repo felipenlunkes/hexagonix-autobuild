@@ -24,9 +24,9 @@ class hxAutoBuild:
         self.botao3=Button(win, text='Executar Hexagonix (vm)', command=self.execHX)
 
         self.botao0.place(x=120, y=100)
-        self.botao1.place(x=20, y=150)
-        self.botao2.place(x=365, y=150)
-        self.botao3.place(x=40, y=200)
+        self.botao1.place(x=5, y=150)
+        self.botao2.place(x=375, y=150)
+        self.botao3.place(x=174, y=150)
 
     def configure(self):
 
@@ -68,7 +68,7 @@ class hxAutoBuild:
 
 janela=Tk()
 autobuild=hxAutoBuild(janela)
-janela.title('hx autobuild para Hexagonix H1-R6+ (v0.7)')
+janela.title('hx autobuild para Hexagonix H2 (v0.8)')
 janela.geometry("500x250+10+10")
 print("\nhx autobuild (Hexagonix H1-R6+)")
 print("Copyright (C) 2022-2022 Felipe Miguel Nery Lunkes")
