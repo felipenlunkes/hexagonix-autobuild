@@ -33,7 +33,7 @@ chmod +x autohx.py # Make code executable
 
 <div align="justify">
 
-Use a ferramenta de construção do Hexagonix para construir o carregador de inicialização, o kernel, os utilitários e aplicativos com pouca interação com a linha de comando. O `autohx`fornece uma interface gráfica para permitir a utilização das ferramentas de construção de maneira fácil e rápida. Basta realizar o download do [arquivo](autohx.py) e adicioná-lo no diretório raiz da árvore de arquivos fonte do Hexagonix. Após, use:
+Use a ferramenta de construção do Hexagonix para construir o carregador de inicialização, o kernel, os utilitários e aplicativos com pouca interação com a linha de comando. O `autohx` fornece uma interface gráfica para permitir a utilização das ferramentas de construção de maneira fácil e rápida. Basta realizar o download do [arquivo](autohx.py) e adicioná-lo no diretório raiz da árvore de arquivos fonte do Hexagonix. Após, use:
 
 ```
 chmod +x autohx.py # Tornar o código executável
