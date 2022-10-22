@@ -24,7 +24,7 @@ Use the Hexagonix build tool to build the boot loader, kernel, utilities and app
 
 ```
 chmod +x autohx.py # Make code executable
-./autohx.py # Execute. You can also use python3 autohx.py
+./autohx.py        # Execute. You can also use python3 autohx.py
 ```
 
 </div>
