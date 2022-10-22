@@ -1,7 +1,7 @@
 <div align="center">
 
-<h1>Ferramenta de automação para construção do Hexagonix</h1>
 <h1>Automation tool for building Hexagonix</h1>
+<h3>Ferramenta de automação para construção do Hexagonix</h3>
 
 ![](https://img.shields.io/github/license/felipenlunkes/freebsd-config.svg)
 ![](https://img.shields.io/github/stars/felipenlunkes/freebsd-config.svg)
