@@ -30,7 +30,7 @@ class hxAutoBuild:
         self.botao0.place(x=50, y=130)
         self.botao2.place(x=300, y=130)
 
-        self.lbl4.place(x=210, y=190)
+        self.lbl4.place(x=205, y=190)
 
         self.botao1.place(x=50, y=230)
         self.botao3.place(x=300, y=230)
@@ -41,7 +41,7 @@ class hxAutoBuild:
 
         os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo You must enter your password to continue... && echo && sudo ./configure.sh && echo && echo Press ENTER to return to hx autobuild... && read pausa'")
 
-        self.terminar() 
+        self.complete() 
 
     def construirHX(self):
 
@@ -49,7 +49,7 @@ class hxAutoBuild:
 
         os.system("gnome-terminal -- bash -c 'echo hx autobuild && echo && echo You must enter your password to continue... && echo && sudo hx -i hx && echo && echo Press ENTER to return to hx autobuild... && read pausa'")
 
-        self.terminar() 
+        self.complete() 
 
     def limpar(self):
 
@@ -57,7 +57,7 @@ class hxAutoBuild:
 
         os.system("hx -c")
 
-        self.terminar()
+        self.complete()
 
     def execHX(self):
 
@@ -65,21 +65,22 @@ class hxAutoBuild:
 
         os.system("hx -v hx")
 
-        self.terminar()
+        self.complete()
 
-    def terminar(self):
+    def complete(self):
 
         print("Request completed.\n")
 
 # 
 
-janela=Tk()
-autobuild=hxAutoBuild(janela)
-janela.title('hx autobuild for Hexagonix H2 (v0.8)')
-janela.geometry("500x400+10+10")
-print("\nhx autobuild (Hexagonix H1-R6+)")
+version='v0.9'
+HXWindow=Tk()
+autobuild=hxAutoBuild(HXWindow)
+HXWindow.title('hx autobuild for Hexagonix H2 '+version)
+HXWindow.geometry("500x400+10+10")
+print("\nhx autobuild (Hexagonix H2-RELEASE+) version "+version)
 print("Copyright (C) 2022-2023 Felipe Miguel Nery Lunkes")
 print("All rights reserved.")
 print("\nWaiting for user interaction...")
-janela.mainloop()
+HXWindow.mainloop()
 print("Ended by user.")
